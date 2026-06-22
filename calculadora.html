@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator-card">
+    <h1>Calculadora</h1>
+    <div class="field-group">
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" placeholder="Digite seu nome" />
+    </div>
+    <div class="field-group">
+      <label for="idade">Idade</label>
+      <input id="idade" type="number" min="0" placeholder="Digite sua idade" />
+    </div>
+    <div class="field-group">
+      <label for="numero1">Número 1</label>
+      <input id="numero1" type="number" step="any" placeholder="Digite um número" />
+    </div>
+    <div class="field-group">
+      <label for="numero2">Número 2</label>
+      <input id="numero2" type="number" step="any" placeholder="Digite outro número" />
+    </div>
+    <button id="calcularButton" type="button">Calcular</button>
+
+    <div id="mensagem" class="mensagem"></div>
+    <div id="resultados" class="resultados"></div>
+    <div class="clientes-card">
+      <h2>Clientes salvos</h2>
+      <div id="clientes" class="clientes-list">
+        <p>Nenhum cliente salvo ainda.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
